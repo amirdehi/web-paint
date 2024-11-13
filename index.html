@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="container">
+    <svg id="board" onclick="startDraw(event);">
+
+    </svg>
+    <div id="actions">
+        <input type="button" value="Cancel" onclick="cancelDraw();" class="action-btn" id="cancel-btn">
+        <input type="button" value="Confirm" onclick="confirmDraw();" class="action-btn" id="confirm-btn">
+    </div>
+    <div id="tools">
+        <input type="button" value="Line" onclick="selectTool(this)" class="tool-btn selected-tool" id="line-btn"/>
+        <input type="button" value="Rectangle" onclick="selectTool(this)" class="tool-btn" id="rect-btn"/>
+        <input type="button" value="Circle" onclick="selectTool(this)" class="tool-btn" id="circle-btn"/>
+        <input type="button" value="Polygon" onclick="selectTool(this)" class="tool-btn" id="polygon-btn"/>
+        <input type="button" value="Polyline" onclick="selectTool(this)" class="tool-btn" id="polyline-btn"/>
+    </div>
+    <div id="colors">
+        <input type="button" value="" onclick="selectColor(this)" class="color-btn selected-color" id="black-btn"/>
+        <input type="button" value="" onclick="selectColor(this)" class="color-btn" id="white-btn"/>
+        <input type="button" value="" onclick="selectColor(this)" class="color-btn" id="red-btn"/>
+        <input type="button" value="" onclick="selectColor(this)" class="color-btn" id="green-btn"/>
+        <input type="button" value="" onclick="selectColor(this)" class="color-btn" id="blue-btn"/>
+        <input type="button" value="" onclick="selectColor(this)" class="color-btn" id="yellow-btn"/>
+        <input type="button" value="" onclick="selectColor(this)" class="color-btn" id="gray-btn"/>
+        <input type="button" value="" onclick="selectColor(this)" class="color-btn" id="orange-btn"/>
+        <input type="button" value="" onclick="selectColor(this)" class="color-btn" id="purple-btn"/>
+    </div>
+</div>
+</body>
+</html>

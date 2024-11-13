@@ -1,0 +1,164 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background-color: #CFFCF5;
+    height: 80%;
+    width: 100%;
+}
+
+#tools {
+    background-color: #F5CFFC;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#colors {
+    background-color: #FCF5CF;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-btn {
+    width: 30pt;
+    height: 30pt;
+    border-radius: 50%;
+    border: 1px solid saddlebrown;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.color-btn + .color-btn {
+    margin-left: 10px;
+}
+
+.selected-color {
+    box-shadow: 0 0 10px 5px brown;
+}
+
+#black-btn {
+    background-color: black;
+}
+
+#white-btn {
+    background-color: white;
+}
+
+#red-btn {
+    background-color: red;
+}
+
+#green-btn {
+    background-color: green;
+}
+
+#blue-btn {
+    background-color: blue;
+}
+
+#yellow-btn {
+    background-color: yellow;
+}
+
+#gray-btn {
+    background-color: gray;
+}
+
+#orange-btn {
+    background-color: orange;
+}
+
+#purple-btn {
+    background-color: purple;
+}
+
+.tool-btn {
+    width: 60pt;
+    height: 30pt;
+    border-radius: 50%;
+    border: 1px solid saddlebrown;
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.tool-btn:hover {
+    background-color: saddlebrown;
+    color: white;
+ }
+
+.tool-btn + .tool-btn {
+    margin-left: 10px;
+}
+
+.selected-tool {
+    box-shadow: 0 0 10px 3px brown;
+}
+
+#actions{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 130pt;
+    height: 40pt;
+    background-color: #F5CFFC;
+    border-radius: 30% 30% 0 0;
+    position: absolute;
+    bottom: 20%;
+    display: none;
+}
+
+.action-btn{
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.action-btn + .action-btn {
+    margin-left: 5px;
+}
+
+#confirm-btn{
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA6D;
+}
+
+#confirm-btn:hover{
+    background-color: #04AA6D;
+    color: white;
+}
+
+#cancel-btn{
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+}
+
+#cancel-btn:hover{
+    background-color: #f44336;
+    color: white;
+}
